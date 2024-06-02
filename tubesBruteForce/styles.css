@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#sudoku-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#sudoku-grid {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#sudoku-grid td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #000;
+    position: relative;
+}
+
+#sudoku-grid td input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#sudoku-grid .block-vertical {
+    border-right: 2px solid black;
+}
+
+#sudoku-grid .block-horizontal {
+    border-bottom: 2px solid black;
+}
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.error {
+    background-color: red;
+}
+
+#solve-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#time-taken {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
